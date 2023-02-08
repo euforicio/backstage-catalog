@@ -1,0 +1,42 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: alice-web
+  description: Frontend Api
+
+  # annotations:
+    # github.com/project-slug: euforicio/alice-web
+    # backstage.io/techdocs-ref: value
+  tags:
+    - web
+    - apache
+    - frontend
+  links:
+    - url: https://bob.euforicio.com/user
+      title: Examples Users
+      icon: user
+    - url: https://bob.euforicio.com/group
+      title: Example Group
+      icon: group
+    - url: https://bob.euforicio.com/cloud
+      title: Link with Cloud Icon
+      icon: cloud
+    - url: https://bob.euforicio.com/dashboard
+      title: Dashboard
+      icon: dashboard
+    - url: https://bob.euforicio.com/help
+      title: Support
+      icon: help
+    - url: https://bob.euforicio.com/web
+      title: Website
+      icon: web
+    - url: https://bob.euforicio.com/alert
+      title: Alerts
+      icon: alert
+spec:
+  type: website
+  lifecycle: production
+  owner: group:dev-team
+  system: alice
+  dependsOn: ['system:bob']
+  apiConsumedBy: ['component:alice']
