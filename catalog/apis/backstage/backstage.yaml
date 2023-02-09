@@ -5,7 +5,7 @@ metadata:
   description: Backstage IDP Portal
 
   annotations:
-    github.com/project-slug: euforicio/backstage
+    github.com/project-slug: allergan-data-labs/alle-internal-backend-backstage
     backstage.io/techdocs-ref: value
     backstage.io/kubernetes-namespace: backstage
 spec:
@@ -14,7 +14,7 @@ spec:
   system: backstage
   owner: group:sre-team
   providesApis:
-    - backstage.euforic.io
+    - backstage.allergan-data-labs
   definition: |
     openapi: "3.0.0"
     info:
